@@ -11,10 +11,11 @@ import Ticket from "./Ticket.jsx"
 
 function App() {
   let winCondition=(ticket)=>{
-    return ticket.every((num)=>num==ticket[0]);
+    let sum=ticket.reduce((curr,sum)=>curr+sum,0);
+    return sum==15;
   }
   return(
-    <div>
+    <div className="appLottery">
       <Lottery n={3} winCondition={winCondition}/>
     </div>
     

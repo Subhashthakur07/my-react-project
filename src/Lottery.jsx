@@ -10,12 +10,12 @@ export default function Lottery({n,winCondition}){
         setTicket(()=>genTicket(n));
     }
     return(
-        <div>
-            <h3>Lottery Game!</h3>
+        <div className="Lottery">
+            <h3>Lottery Game by <i>sobby</i>!</h3>
             <Ticket ticket={ticket}/>
-            <button onClick={reGenerate}>Buy New Ticket</button>
+            <button onClick={reGenerate} style={{backgroundColor:"pink"}}>Buy New Ticket</button>
             <br />
-            <p>{isWinning?"Congratulations you won!":"Sorry! try again"}</p>
+            <p>{isWinning?<p style={{color:"Green"}}>"Congratulations you won!"</p>:<p style={{color:"Red"}}>"Sorry! try again"</p>}</p>
         </div>
     );
 }
