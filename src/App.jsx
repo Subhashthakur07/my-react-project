@@ -15,7 +15,7 @@ function App() {
     return sum==15;
   }
   return(
-    <div className="appLottery">
+    <div>
       <Lottery n={3} winCondition={winCondition}/>
     </div>
     

@@ -12,6 +12,7 @@ export default function Lottery({n,winCondition}){
     return(
         <div className="Lottery">
             <h3>Lottery Game by <i>sobby</i>!</h3>
+            <h5>you win if Lottery's digits sum is 15!</h5>
             <Ticket ticket={ticket}/>
             <button onClick={reGenerate} style={{backgroundColor:"pink"}}>Buy New Ticket</button>
             <br />
